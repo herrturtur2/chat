@@ -1,0 +1,59 @@
+#username {
+    padding: 0px;
+    margin: 0px;
+    height: 26px;
+    width: 400px;
+}
+
+/* added container to wrap onlineusers and display */
+#container {
+    margin: 10px 0;
+}
+
+#display {
+    padding: 0px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: auto;
+    height: 400px;
+    height: 400px;
+    width: 400px;
+    float: left;
+}
+
+#onlineusers {
+    padding: 0px;
+    margin: 0px;
+    height: 400px;
+    width: 200px;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+}
+
+/* Added container2 to wrap inputline and sendbutton */
+#container2 {
+    margin: 10px 0;
+}
+
+#inputline {
+    padding: 0px;
+    margin: 0px;
+    height: 26px;
+    width: 350px;
+    float: left;
+}
+
+#sendbutton {
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+    width: 50px;
+    float: left;
+}
+
+/* this is well used "hack" */
+.clearfix {
+    clear: both;
+}

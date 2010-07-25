@@ -1,0 +1,10 @@
+README 
+
+A chat client. 
+For now using php, until someone gets websockets figured out.
+
+Manifest:
+=========
+\index.html
+\styles.css
+
