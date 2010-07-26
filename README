@@ -6,5 +6,10 @@ For now using php, until someone gets websockets figured out.
 Manifest:
 =========
 \index.html
-\styles.css
-
+\README             (this readme file)
+\register.php       (responsible for adding new users to the onlineusers list)
+\scripts.js         (contains javascript for index.html)
+\styles.css         (contains css for index.html)
+\test\              (directory - contains little code snippets to test unfamiliar features and examples)
+\test\testjson.php  (tests the json_decode function in php)
+\getOnlineUsers.php (the php file responsible for returning currently online users)
