@@ -17,7 +17,7 @@ $query = "select id, name from user";
 $result = mysql_query($query);
 
 // construct json string containing an array of all users
-echo '{"persons": [';
+echo '{"users": [';
 $first = True;
 while($row = mysql_fetch_array($result)){
   if (!$first){

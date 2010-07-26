@@ -13,7 +13,7 @@ ini_set("error_reporting", 1);
 $user = 'root';
 $password = 'tuerklinke010'
 $database = 'chat';
-mysql_connect('localhost', $user, $password);
+$conn = mysql_connect('localhost', $user, $password);
 @mysql_select_db($database) or die("Unable to select database");
 
 // insert $_POST['username'] into the user table
@@ -22,4 +22,5 @@ mysql_connect('localhost', $user, $password);
 $query = "insert into user (id, name) values (NULL, '" . $_POST['username'] . "')";
 mysql_query($query);
 
+mysql_close($conn);
 ?>
