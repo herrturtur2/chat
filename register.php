@@ -10,17 +10,12 @@ ini_set("error_reporting", 1);
 
 // lots of stuff todo
 // open the database
-$user = 'root';
-$password = 'tuerklinke010'
-$database = 'chat';
-$conn = mysql_connect('localhost', $user, $password);
-@mysql_select_db($database) or die("Unable to select database");
+$mysqli = new mysqli('localhost', 'root', 'tuerklinke010', 'chat');
 
 // insert $_POST['username'] into the user table
 // the client is responsible for not inserting duplicate values...
 // this will likely change later
-$query = "insert into user (id, name) values (NULL, '" . $_POST['username'] . "')";
-mysql_query($query);
+$result = $mysqli->query("insert into user (id, name) values (NULL, '" . $_POST['username'] . "')");
 
-mysql_close($conn);
+
 ?>
