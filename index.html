@@ -10,7 +10,7 @@
     
     <h1>Chat3</h1>
 
-    <input type="text" id="username" />
+    <input type="text" id="username" onkeypress="if(event.keyCode==13) registerUser()" />
     <div id="container">
       <div id="display"></div>
       <div id="onlineusers"></div>
